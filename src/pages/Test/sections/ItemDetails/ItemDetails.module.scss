@@ -1,0 +1,65 @@
+@import "../../../../index";
+
+.mainContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonClose {
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+
+.iconClose {
+    margin-right: -3px;
+    margin-left: -3px;
+}
+
+.tabs {
+    border-color: $gray-dark;
+    margin-bottom: 0;
+    
+    & a[class~="nav-link"][class~="active"] {
+        font-weight: bold;
+        border-color: $gray-dark $gray-dark transparent $gray-dark;
+    }
+    
+    & ~ div[class~="tab-content"] {
+        border-left: 1px solid $gray-dark;
+        border-right: 1px solid $gray-dark;
+        border-bottom: 1px solid $gray-dark;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+    & .dataItem {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    & .dataItem div {
+        word-break: break-word;
+    }
+    
+    & .dataItem div:nth-child(odd) {
+        font-weight: bold;
+        width: 200px;
+    }
+    
+    & .dataItem div:nth-child(even) {
+        flex: 1;
+    }
+}

@@ -1,0 +1,61 @@
+@import "../../index";
+
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+    & table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    & thead {
+        color: $beige;
+        background-color: $primary;
+        border: 1px solid $beige;
+    }
+    
+    & th {
+        border-right: 1px solid $beige;
+        border-left: 1px solid $beige;
+        padding: 5px 15px;
+        white-space: nowrap;
+    }
+    
+    & tbody tr.trRow {
+        cursor: pointer;
+    }
+    
+    & tbody tr.trRow:nth-child(even) {
+        background-color: $gray-light;
+    }
+    
+    & tbody tr.trRow:hover {
+        background-color: $secondary-light;
+    }
+    
+    & tbody tr.trRow td {
+        padding: 5px 15px;
+    }
+}
+
+.messageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    font-size: 16px;
+}
+
+.loadingMoreContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+    & div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

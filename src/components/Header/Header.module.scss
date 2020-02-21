@@ -1,0 +1,21 @@
+@import "../../index";
+
+.mainContainer {
+    display: flex;
+    background-color: $primary;
+    height: 40px;
+    min-height: 40px;
+    width: 100%;
+    align-items: center;
+    -webkit-box-shadow: 0px -5px 20px 0px $primary;
+    -moz-box-shadow: 0px -5px 20px 0px $primary;
+    box-shadow: 0px -5px 20px 0px $primary;
+}
+
+.title {
+    margin: 0 20px 0 20px;
+    color: $beige;
+    font-family: 'AmerikaSans', sans-serif;
+    font-size: 20px;
+    flex: 1;
+}

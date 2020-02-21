@@ -1,0 +1,25 @@
+@import "../../../../index";
+
+.mainContainer {
+    width: 200px;
+    padding: 10px;
+}
+
+.header {
+    padding: 5px;
+    border-bottom: 1px solid $gray-dark;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subheader {
+    font-weight: bold;
+    padding: 10px;
+    color: $secondary-dark;
+}
+
+.inputGroup {
+    margin-left: 10px;
+}

@@ -1,0 +1,12 @@
+@import "../../index";
+
+.mainContainer {
+    display: flex;
+    background-color: $primary;
+    width: 50px;
+    min-width: 50px;
+    height: 100%;
+    -webkit-box-shadow: -5px 10px 20px 0px $primary;
+    -moz-box-shadow: -5px 10px 20px 0px $primary;
+    box-shadow: -5px 10px 20px 0px $primary;
+}

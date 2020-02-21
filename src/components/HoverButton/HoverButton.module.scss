@@ -1,0 +1,19 @@
+@import "../../index";
+
+.button {
+    border: none;
+    border-radius: 2px;
+    white-space: nowrap;
+    height: 35px;
+    
+    &.active,
+    &:hover {
+        color: $primary;
+        background-color: $secondary;
+    }
+    
+    &:not(:disabled):not(.disabled):active {
+        color: $primary;
+        background-color: $secondary-light;
+    }
+}

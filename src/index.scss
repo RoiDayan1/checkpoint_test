@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Assistant:400,700");
+
+@font-face {
+  font-family: AmerikaSans;
+  src: url("./assets/fonts/amerika_sans.ttf");
+}
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$input-btn-focus-box-shadow: none !important;
+$btn-focus-box-shadow: none !important;
+$input-focus-box-shadow: none !important;
+$custom-control-indicator-focus-box-shadow: none !important;
+$custom-select-focus-box-shadow: none !important;
+$custom-range-thumb-focus-box-shadow: none !important;
+$custom-file-focus-box-shadow: none !important;
+$pagination-focus-box-shadow: none !important;
+
+$primary: #172336;
+$primary-light: lighten($primary, 5%);
+$secondary: #99e3ff;
+$secondary-light: lighten($secondary, 5%);
+$secondary-dark: darken($secondary, 30%);
+$beige: #f2e9e1;
+$gray: #dddfeb;
+$gray-light: lighten($gray, 5%);
+$gray-dark: darken($gray, 15%);
+$body-bg: lighten($gray, 9%);
+$theme-colors: (
+        "gray": $gray,
+        "gray-dark": $gray-dark,
+        "beige": $beige,
+);
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $body-bg;
+  color: $primary;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  
+  *:focus {
+    outline: none;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+div[class^="react-toast-notifications__container"] {
+  top: 40px;
+}

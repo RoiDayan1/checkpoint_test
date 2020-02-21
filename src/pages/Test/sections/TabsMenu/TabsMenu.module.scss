@@ -1,0 +1,9 @@
+@import "../../../../index";
+
+.mainContainer {
+    max-width: 250px;
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-right: 1px solid $gray-dark;
+}

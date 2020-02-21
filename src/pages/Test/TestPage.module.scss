@@ -1,0 +1,89 @@
+@import "../../index";
+
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstLayoutContainer {
+    flex: 1 1 auto;
+    height: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.secondLayoutContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyContainer {
+    flex: 1 1 auto;
+    height: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.dataContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tableContainer {
+    flex: 1;
+    height: 0;
+}
+
+.itemContainer {
+    overflow: hidden;
+    
+    &.show {
+        height: 40%;
+        max-height: 40%;
+        transition: height 0.3s, max-height 0.3s, margin-top 0.3s;
+        margin-top: 10px;
+    }
+    
+    &.hide {
+        height: 0;
+        max-height: 0;
+        transition: height 0.3s, max-height 0.3s, margin-top 0.3s;
+    }
+}
+
+.sideFiltersContainer {
+    background-color: white;
+    transition: width 0.5s;
+    overflow: hidden;
+    border-radius: 2px;
+    border: 1px solid $gray-dark;
+    
+    &.show {
+        width: 200px;
+        transition: width 0.3s, border-right-width 0.3s, border-left-width 0.1s ease 0.1s;
+        margin-left: 10px;
+    }
+    
+    &.hide {
+        width: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+        transition: width 0.3s, border-right-width 0.1s ease 0.3s, border-left-width 0.1s ease 0.3s;
+    }
+}
+
+.headerRightButton {
+    display: flex;
+    align-items: center;
+    color: $beige;
+    margin-right: 20px;
+}
+
+.headerRightButtonIcon {
+    margin-right: 5px;
+}

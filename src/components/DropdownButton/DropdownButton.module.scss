@@ -1,0 +1,37 @@
+@import "../../index";
+
+.mainContainer {
+
+}
+
+.dropdownButton {
+    min-width: 150px;
+    
+    & button {
+        min-width: 150px;
+        color: $primary;
+        border-color: $primary;
+        border-radius: 2px;
+        padding-left: 20px;
+        text-align: left;
+        
+        &::after {
+            margin-left: 18px;
+            float: right;
+            position: relative;
+            top: 9px;
+        }
+    }
+    
+    & a:not(.active):hover {
+        color: $primary;
+        background-color: $secondary-light;
+    }
+    
+    & .active {
+        color: beige;
+        background-color: $primary;
+        cursor: default;
+    }
+    
+}
